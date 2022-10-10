@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer="true"></script>
+  <!--  -->
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+
+  <header id="header">
+    <!--  -->
+    <h2 id="course-name">WPR</h2>
+    <div class="mern-container">
+      <div class="stack-circle">
+        <p>M</p>
+      </div>
+      <div class="stack-circle">
+        <p>E</p>
+      </div>
+      <div class="stack-circle">
+        <p>R</p>
+      </div>
+      <div class="stack-circle">
+        <p>N</p>
+      </div>
+    </div>
+  </header>
+
+  <article>
+
+    <section id="quiz-name">
+      <h1>HTML Quiz</h1>
+    </section>
+
+    <section id="introduction">
+      <!--  -->
+      <h4 id="author">By Minh Quan Do</h4>
+      <h2 class="intro-title">The Test</h2>
+      <p class="intro-paragraph">The test contains 10 questions and there is no time limit.</p>
+      <p class="intro-paragraph">The test is not official, it's just a nice way to see how much you know, 
+        or don't know, about HTML.</p>
+      <h2 class="intro-title">Count Your Score</h2>
+      <p class="intro-paragraph">You will get 1 point for each correct answer. At the end of the Quiz, 
+        your total score will be displayed. Maximum score is 10 points.</p>
+
+      <div id="box-start">
+        <h2 class="intro-title">Start the quiz</h2>
+        <p class="intro-paragraph">Good luck!</p>
+        <button id="btn-start">Start the HTML quiz ></button>
+      </div>
+    </section>
+
+    <section id="attempt-quiz" class="hidden">
+      <!--  -->
+      <div class="questions">
+      <!-- <div class="attempt-question-container">
+        <h2 class="question-index">Question 1 of 10</h2>
+        <p class="question-text">question 1</p>
+        <form id="question-form-1">
+          <div class="answer-container">
+            <label class="option" id="label1">
+              <input type="radio" name="option" id="1" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="1">option 1</label>
+            </label>
+            <label class="option" id="label2">
+              <input type="radio" name="option" id="2" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="2">option 2</label>
+            </label>
+            <label class="option" id="label3">
+              <input type="radio" name="option" id="3" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="3">option 3</label>
+            </label>
+            <label class="option" id="label4">
+              <input type="radio" name="option" id="4" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="4">option 4</label>
+            </label>
+          </div>
+        </form>
+      </div>
+      
+      <div class="attempt-question-container">
+        <h2 class="question-index">Question 2 of 10</h2>
+        <p class="question-text">question 2</p>
+        <form id="question-form-2">
+          <div class="answer-container">
+            <label class="option" id="label1">
+              <input type="radio" name="option" id="1" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="1">option 5</label>
+            </label>
+            <label class="option" id="label2">
+              <input type="radio" name="option" id="2" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="2">option 6</label>
+            </label>
+            <label class="option" id="label3">
+              <input type="radio" name="option" id="3" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="3">option 7</label>
+            </label>
+            <label class="option" id="label4">
+              <input type="radio" name="option" id="4" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="4">option 8</label>
+            </label>
+          </div>
+        </form>
+      </div>
+      
+        <div class="attempt-question-container">
+        <h2 class="question-index">Question 3 of 10</h2>
+        <p class="question-text">question 3</p>
+        <form id="question-form-2">
+          <div class="answer-container">
+            <label class="option" id="label1">
+              <input type="radio" name="option" id="1" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="1">option 5</label>
+            </label>
+            <label class="option" id="label2">
+              <input type="radio" name="option" id="2" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="2">option 6</label>
+            </label>
+            <label class="option" id="label3">
+              <input type="radio" name="option" id="3" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="3">option 7</label>
+            </label>
+            <label class="option" id="label4">
+              <input type="radio" name="option" id="4" class="input-option" onclick='handleClick(this)'/>
+              <label class="answer-text" for="4">option 8</label>
+            </label>
+          </div>
+        </form>
+      </div> -->
+      </div>
+
+      <div id="box-submit">
+        <button id="btn-submit">
+          Submit your answers >
+        </button>
+      </div>
+    </section>
+
+    <section id="review-quiz" class="hidden">
+      <!--  -->
+      <div class="review-questions">
+      <!-- <div class="question-container">
+        <h2 class="question-index">Question 1 of 10</h2>
+        <p class="question-text">question 1</p>
+        <form id="question-form-1">
+          <div class="answer-container">
+            <label class="option" id="label1">
+              <input type="radio" name="option" id="1" disabled/>
+              <label class="answer-text" for="1">option 1</label>
+            </label>
+            <label class="option option-correct" id="label2">
+              <input type="radio" name="option" id="2" disabled/>
+              <label class="answer-text" for="2">option 2</label>
+              <div class="answer-label">Correct answer</div>
+            </label>
+            <label class="option wrong-answer" id="label3">
+              <input type="radio" name="option" id="3" disabled/>
+              <label class="answer-text" for="3">option 3</label>
+              <div class="answer-label">Your answer</div>            
+            </label>
+            <label class="option correct-answer" id="label4">
+              <input type="radio" name="option" id="4" checked disabled/>
+              <label class="answer-text" for="4">option 4</label>
+              <div class="answer-label">Correct answer</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="question-container">
+        <h2 class="question-index">Question 2 of 10</h2>
+        <p class="question-text">question 2</p>
+        <form id="question-form-1">
+          <div class="answer-container">
+            <label class="option" id="label1">
+              <input type="radio" name="option" id="1" disabled/>
+              <label class="answer-text" for="1">option 1</label>
+            </label>
+            <label class="option option-correct" id="label2">
+              <input type="radio" name="option" id="2" disabled/>
+              <label class="answer-text" for="2">option 2</label>
+              <div class="answer-label">Correct answer</div>
+            </label>
+            <label class="option wrong-answer" id="label3">
+              <input type="radio" name="option" id="3" disabled/>
+              <label class="answer-text" for="3">option 3</label>
+              <div class="answer-label">Your answer</div>            
+            </label>
+            <label class="option correct-answer" id="label4">
+              <input type="radio" name="option" id="4" checked disabled/>
+              <label class="answer-text" for="4">option 4</label>
+              <div class="answer-label">Correct answer</div>
+            </label>
+          </div>
+        </div>
+      </form> -->
+      </div>
+
+      <div id="box-result">
+        <!-- <h2 id="result-text">Result:</h2>
+        <p id="result-score">1/10</p>
+        <p id="result-percent">10%</p>
+        <p id="result-feedback">Practice more to improve it :D</p>
+        <button id="btn-try-again">Try again</button> -->
+      </div>
+    </section>
+
+    <div id="modal">
+      <div class="modal-container">
+        <p>Are you sure want to finish this quiz?</p>
+        <div class="btn-container">
+          <button class="modal-option ok-option">Ok</button>
+          <button class="modal-option cancel-option">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
